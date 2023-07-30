@@ -1,0 +1,47 @@
+motorcycles = ['honda', 'yamaha', 'suzuki']
+print(motorcycles)
+motorcycles[0] = 'ducati'
+print(motorcycles)
+motorcycles.append('honda')
+print(motorcycles)
+
+bikes = []
+bikes.append('honda')
+print(bikes)
+bikes.append('yamaha')
+print(bikes)
+bikes.append('suzuki')
+print(bikes)
+bikes.insert(0, 'dukati')
+print(bikes)
+del bikes[0]
+print(bikes)
+bikes.__delitem__(0)
+print(bikes)
+bikes.insert(0, 'honda')
+print(bikes)
+bikes.insert(0, 'dukati')
+print(bikes)
+
+popped_bikes = bikes.pop()
+print(bikes)
+print(popped_bikes)
+print(popped_bikes.title())
+last_owned = bikes.pop()
+print(f"The last motorcycle I owned was a {last_owned.title()}")
+first_owned = bikes.pop(0)
+print(f"The first motorcycle I owned was a {first_owned.title()}")
+print(bikes)
+
+bikes.insert(0, 'dukati')
+bikes.insert(2, 'yamaha')
+bikes.insert(3, 'suzuki')
+print(bikes)
+bikes.remove('dukati')
+print(bikes)
+bikes.insert(0, 'dukati')
+print(bikes)
+too_expensive = 'dukati'
+bikes.remove(too_expensive)
+print(bikes)
+print(f"\nA {too_expensive.title()} is too expensive for me.")
